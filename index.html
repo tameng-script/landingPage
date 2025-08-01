@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimal Landing Page</title>
-    <link href="./dist/output.css" rel="stylesheet">
-</head>
-<body class="bg-gray-50 font-sans">
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">ยินดีต้อนรับสู่เว็บไซต์ของคุณ</h1>
+      <p class="text-lg text-gray-600 mb-6 max-w-xl">
+        นี่คือหน้า Landing Page ที่ออกแบบมาอย่างเรียบง่าย สะอาด และเหมาะกับทุกอุปกรณ์
+      </p>
+      <a
+        href="#"
+        class="px-6 py-3 rounded-full bg-black text-white hover:bg-gray-800 transition duration-300"
+        >เริ่มต้นใช้งาน</a
+      >
+    </section>
 
-    <main class="min-h-screen flex items-center justify-center p-6">
-        <div class="bg-white p-10 md:p-16 rounded-xl shadow-lg text-center max-w-2xl">
-            
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-800">
-                Minimal Design, Maximum Impact.
-            </h1>
-            
-            <p class="mt-4 text-lg text-gray-600">
-                นี่คือตัวอย่าง Landing Page ที่สร้างด้วย TailwindCSS เน้นความเรียบง่าย สบายตา และโหลดเร็ว
-            </p>
-            
-            <a href="#" class="mt-8 inline-block bg-blue-500 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300">
-                เริ่มต้นใช้งาน
-            </a>
-
+    <!-- Features -->
+    <section class="py-12 bg-gray-100">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-2xl font-semibold mb-8">คุณสมบัติเด่น</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="font-bold text-xl mb-2">โหลดเร็ว</h3>
+            <p class="text-gray-600 text-sm">ไม่มี JavaScript ซับซ้อน โหลดเร็วสุดๆ</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="font-bold text-xl mb-2">ออกแบบเรียบง่าย</h3>
+            <p class="text-gray-600 text-sm">เหมาะสำหรับทุกสายงาน — นำไปต่อยอดได้ทันที</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="font-bold text-xl mb-2">รองรับมือถือ</h3>
+            <p class="text-gray-600 text-sm">Responsive ครบทุกขนาดหน้าจอ</p>
+          </div>
         </div>
-    </main>
+      </div>
+    </section>
 
-</body>
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-500 py-6">
+      &copy; 2025 สร้างโดยคุณ
+    </footer>
+  </body>
 </html>
