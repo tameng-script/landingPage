@@ -10,20 +10,27 @@
     />
   </head>
   <body class="bg-white text-gray-800">
+
     <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col justify-center items-center px-6 text-center">
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 text-center bg-gray-50">
+      <!-- รูปภาพ -->
+      <img src="https://via.placeholder.com/200x200.png?text=LOGO" alt="โลโก้" class="mb-6 rounded-full shadow-lg" />
+      
+      <!-- หัวเรื่อง -->
       <h1 class="text-4xl md:text-6xl font-bold mb-4">ยินดีต้อนรับสู่เว็บไซต์ นายศราวุธ น้อยผา</h1>
       <p class="text-lg text-gray-600 mb-6 max-w-xl">
         โรงเรียนบ้านตาเม็ง(อสพป.9) สพป.ศรีสะเกษ เขต 3
       </p>
+
+      <!-- ปุ่มเชื่อมไปหน้า start.html -->
       <a
-        href="#"
+        href="start.html"
         class="px-6 py-3 rounded-full bg-black text-white hover:bg-gray-800 transition duration-300"
         >เริ่มต้นใช้งาน</a
       >
     </section>
 
-    <!-- Features -->
+    <!-- Features Section -->
     <section class="py-12 bg-gray-100">
       <div class="max-w-5xl mx-auto px-6 text-center">
         <h2 class="text-2xl font-semibold mb-8">คุณสมบัติเด่น</h2>
@@ -44,8 +51,28 @@
       </div>
     </section>
 
+    <!-- Contact Form -->
+    <section class="py-12 bg-white">
+      <div class="max-w-xl mx-auto px-6">
+        <h2 class="text-2xl font-semibold mb-6 text-center">ติดต่อเรา</h2>
+        <form class="space-y-4">
+          <input type="text" name="name" placeholder="ชื่อของคุณ" required
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          
+          <input type="email" name="email" placeholder="อีเมลของคุณ" required
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          
+          <textarea name="message" rows="4" placeholder="ข้อความของคุณ" required
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          
+          <button type="submit"
+            class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">ส่งข้อความ</button>
+        </form>
+      </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="text-center text-sm text-gray-500 py-6">
+    <footer class="text-center text-sm text-gray-500 py-6 bg-gray-50">
       &copy; 2025 พัฒนาโดย : นายศราวุธ น้อยผา
     </footer>
   </body>
